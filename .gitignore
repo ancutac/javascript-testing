@@ -3,4 +3,4 @@ node_modules/
 coverage/
 *.log
 dist/
-test/exec/*.js
+test/babelify/*.js

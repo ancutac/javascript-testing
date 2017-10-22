@@ -14,6 +14,7 @@ const config = {
                         presets: [ "env" ],
                     },
                 },
+
             },
         ],
     },
@@ -40,7 +41,7 @@ const testsBabelify = Object.assign( {}, config, {
     entry: "./test/index.js",
 
     output: {
-        path: path.resolve( __dirname, "test/exec" ),
+        path: path.resolve( __dirname, "test/babelify" ),
         filename: "tests-babelify.js",
     },
 } );
@@ -49,7 +50,7 @@ const codeBabelify = Object.assign( {}, config, {
     entry: "./src/draw.js",
 
     output: {
-        path: path.resolve( __dirname, "test/exec" ),
+        path: path.resolve( __dirname, "test/babelify" ),
         filename: "code-babelify.js",
     },
 } );
