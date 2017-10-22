@@ -1,0 +1,7 @@
+{
+    "env": {
+        "browser": true, // set this if you're running a browser app
+        "mocha": true // set this if you have mocha-style tests in your app folder
+    },
+    "extends": "fortech"
+}

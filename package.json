@@ -1,0 +1,37 @@
+{
+  "name": "javascript-testing",
+  "version": "1.0.0",
+  "description": "Javascript Testing Setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint ./**/*.js",
+    "precommit": "npm run lint",
+    "webpack": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ancutac/javascript-testing.git"
+  },
+  "keywords": [
+    "javascript",
+    "testing"
+  ],
+  "author": "Ancuta Chibulcutean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ancutac/javascript-testing/issues"
+  },
+  "homepage": "https://github.com/ancutac/javascript-testing#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.9.0",
+    "eslint-config-fortech": "^2.0.1",
+    "eslint-plugin-import": "^2.8.0",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
