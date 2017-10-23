@@ -26,6 +26,7 @@ yarn
 * instanbul - code coverage
 
 **Run project**
+
 Generate bundles
 ```
 npm run webpack
