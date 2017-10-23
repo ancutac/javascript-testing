@@ -28,6 +28,7 @@
     "babel-eslint": "^8.0.1",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "eslint": "^4.9.0",
     "eslint-config-fortech": "^2.0.1",
@@ -37,9 +38,11 @@
     "gulp-istanbul-report": "0.0.1",
     "gulp-mocha-phantomjs": "^0.12.1",
     "gulp-open": "^2.0.0",
+    "gulp-util": "^3.0.8",
     "mocha": "^4.0.1",
     "mocha-phantomjs-istanbul": "0.0.2",
     "sinon": "^4.0.1",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.8.1",
     "webpack-node-externals": "^1.6.0"
   }
