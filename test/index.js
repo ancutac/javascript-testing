@@ -1,5 +1,7 @@
-import commonSpec from "./specs/common.spec";
+import { utilsSpec } from "./unit/utils.spec";
+import { CalculatorSpecs } from "./unit/Calculator.spec";
 
-describe( "Unit tests (PhantomJS)", function ( ) {
-    describe( "Common Functions", commonSpec );
+describe( "Unit tests", ( ) => {
+    describe( "Utils Functions", utilsSpec );
+    describe( "CalculatorSpecs Functions", CalculatorSpecs );
 } );

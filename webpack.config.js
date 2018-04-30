@@ -1,6 +1,6 @@
 const path = require( "path" );
 const UglifyJSPlugin = require( "uglifyjs-webpack-plugin" );
-const nodeExternals = require( "webpack-node-externals" );
+const { BundleAnalyzerPlugin } = require( "webpack-bundle-analyzer" );
 
 const config = {
     module: {
@@ -15,19 +15,26 @@ const config = {
 };
 
 const draw = Object.assign( {}, config, {
-    entry: "./src/draw.js",
-    target: "node", // in order to ignore built-in modules like path, fs, etc.
-    externals: [ nodeExternals( ) ], // in order to ignore all modules in node_modules folder
+    entry: "./src/Calculator.js",
 
     output: {
         path: path.resolve( __dirname, "dist/" ),
-        filename: "draw.js",
+        filename: "calculator.js",
+    },
+
+    resolve: {
+        modules: [ "node_modules" ],
     },
 
     devtool: "source-map",
 
     plugins: [
         new UglifyJSPlugin( { sourceMap: true } ),
+        new BundleAnalyzerPlugin( {
+            analyzerMode: "static",
+            reportFilename: "bundle-report.html",
+            openAnalyzer: false,
+        } ),
     ],
 } );
 
@@ -40,13 +47,4 @@ const testsBabelify = Object.assign( {}, config, {
     },
 } );
 
-const codeBabelify = Object.assign( {}, config, {
-    entry: "./src/draw.js",
-
-    output: {
-        path: path.resolve( __dirname, "test/babelify" ),
-        filename: "code-babelify.js",
-    },
-} );
-
-module.exports = [ draw, testsBabelify, codeBabelify ];
+module.exports = [ draw, testsBabelify ];

@@ -18,31 +18,25 @@ yarn
 ```
 **Testing setup**
 * webpack - babelify
-* gulp - task runner for tests
+* karma - task runner for tests
 * chai - assertion library
 * sinon - mocking library 
 * mocha - test framework
-* phantomjs - headless browser (browser context needed since we modify the DOM)
 * instanbul - code coverage
 
 **Run project**
 
 Generate bundles
 ```
-npm run webpack
+npm run build
 ```
 
 Running the tests
 ```
-gulp testrunner
+npm run test
 ```
 
 Running eslint
 ```
 npm run lint
 ```
-
-## Todos
-- [ ] Fix code coverage reports
-- [ ] Add setup with browserify
-- [ ] Add setup with Karma
