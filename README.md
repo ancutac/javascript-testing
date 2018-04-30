@@ -1,5 +1,5 @@
-# WIP - Complete javascript testing example project
-An example project for testing in javascript
+# Complete javascript testing example project
+An example project for testing in javascript (jest used for testing and coverage)
 
 ## Usage
 
@@ -7,7 +7,7 @@ An example project for testing in javascript
 ```
 git clone git@github.com:ancutac/javascript-testing.git
 ```
-
+[branch jest]
 **Install dependencies**
 ```
 npm i
@@ -18,11 +18,7 @@ yarn
 ```
 **Testing setup**
 * webpack - babelify
-* karma - task runner for tests
-* chai - assertion library
-* sinon - mocking library 
-* mocha - test framework
-* instanbul - code coverage
+* jest - test framework
 
 **Run project**
 
