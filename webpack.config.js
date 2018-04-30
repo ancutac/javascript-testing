@@ -14,7 +14,7 @@ const config = {
     },
 };
 
-const draw = Object.assign( {}, config, {
+const calculator = Object.assign( {}, config, {
     entry: "./src/Calculator.js",
 
     output: {
@@ -38,13 +38,4 @@ const draw = Object.assign( {}, config, {
     ],
 } );
 
-const testsBabelify = Object.assign( {}, config, {
-    entry: "./test/index.js",
-
-    output: {
-        path: path.resolve( __dirname, "test/babelify" ),
-        filename: "tests-babelify.js",
-    },
-} );
-
-module.exports = [ draw, testsBabelify ];
+module.exports = [ calculator ];
